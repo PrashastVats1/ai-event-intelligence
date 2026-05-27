@@ -3,6 +3,7 @@ import { useAuthStore } from '@/store/authStore'
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL,
+  timeout: 60000, // 60s — Render free tier can take ~30-50s to wake from sleep
 })
 
 api.interceptors.request.use((config) => {

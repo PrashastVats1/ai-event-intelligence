@@ -55,9 +55,9 @@ export default function Dashboard() {
         )}
 
         {error && (
-          <div className="rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-sm text-destructive">
-            Failed to load events:{' '}
-            {error?.response?.data?.detail ?? error.message ?? 'Unknown error'}
+          <div className="rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-sm text-destructive space-y-1">
+            <p>Failed to load events — the backend may be waking up (can take ~30s on free tier).</p>
+            <p className="text-destructive/70">Wait a moment and refresh the page.</p>
           </div>
         )}
 
