@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+apscheduler
+httpx
+google-genai
+appwrite
+python-dotenv
+cryptography

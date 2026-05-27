@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//tmp/**)",
+      "Bash(npx playwright *)",
+      "Bash(node -e ' *)",
+      "Bash(git add *)"
+    ]
+  }
+}
